@@ -6,7 +6,7 @@ let author = document.getElementById("author")
 let image = document.getElementById("image")
 let password = document.getElementById("password")
 button.onclick = () => {
-    axios.post("http://localhost:3000/postblog", {password: password.value, data: {
+    axios.post("./postblog", {password: password.value, data: {
         title: title.value,
         body: body.value,
         subbody: subbody.value,

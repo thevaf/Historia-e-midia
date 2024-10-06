@@ -3,7 +3,7 @@ sessionStorage.setItem("title", 0)
 sessionStorage.setItem("body", 0)
 sessionStorage.setItem("subbody", 0)
 sessionStorage.setItem("image", 0)
-axios.get("http://localhost:3000/blog")
+axios.get("./blog")
   .then((res) => {
     let data = res.data;
     for (let i = 0; i < data.length; i++) {
