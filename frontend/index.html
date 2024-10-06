@@ -22,9 +22,9 @@
         <img src="./assets/icon.png" alt="Nossa logo" width="50">
     </h1>
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div id="blog"></div>
+        <div class="row d-flex justify-content-around">
+            <div class="col-md-12">
+                <div id="blog" class="cards-container"></div>
             </div>
         </div>
     </div>
@@ -36,6 +36,26 @@
     <script src="./out/index.js"></script>
 </body>
 <style>
+    /* Defina o container do blog como flexbox */
+    #blog {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Garante que os cards se espalhem por igual */
+    }
+
+    /* Cada card deve ocupar no mínimo 30% da linha */
+    #blog .card {
+        flex: 1 1 30%; /* Cards ocupam no mínimo 30% e crescem conforme necessário */
+        margin: 10px;
+    }
+
+    /* Em telas menores, os cards ocupam 100% da largura */
+    @media (max-width: 768px) {
+        #blog .card {
+            flex: 1 1 100%;
+        }
+    }
+
     h1 {
         text-align: center;
     }
