@@ -58,7 +58,6 @@ fastify.post('/postblog', function handler(request, reply) {
   }
 })
 
-// Inicia o servidor Fastify
 fastify.listen({ port: process.env.PORT || 1000, host: "0.0.0.0" }, (err) => {
   if (err) {
     fastify.log.error(err)
