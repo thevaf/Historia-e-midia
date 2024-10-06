@@ -29,7 +29,7 @@ fastify.post('/postblog', function handler (request, reply) {
    }
 })
 
-fastify.listen({ port: 3000 }, (err) => {
+fastify.listen({ port: process.env }, (err) => {
   if (err) {
     fastify.log.error(err)
     process.exit(1)
