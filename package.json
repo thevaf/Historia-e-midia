@@ -1,0 +1,23 @@
+{
+  "name": "blog-historia-e-midia",
+  "version": "0.0.1",
+  "description": "Blog do projeto escolar historia e midia",
+  "main": "backend/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/index.js",
+    "build": "esbuild frontend/src/index.js --outfile=frontend/out/index.js"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "vaf",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^10.0.1",
+    "axios": "^1.7.7",
+    "esbuild": "^0.24.0",
+    "fastify": "^5.0.0",
+    "mongoose": "^8.7.0"
+  }
+}
